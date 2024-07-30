@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.new_.TestMainVerticle" tests="1" skipped="0" failures="1" errors="0" timestamp="2024-07-29T10:36:57" hostname="MI-PC" time="1.859">
+  <properties/>
+  <testcase name="verticle_deployed(Vertx, VertxTestContext)" classname="com.example.new_.TestMainVerticle" time="1.859">
+    <failure message="io.ebean.config.BeanNotEnhancedException: Bean class com.example.new_.User is not enhanced? Check packages specified in ebean.mf. If you are running in IDEA or Eclipse check that the enhancement plugin is installed. See https://ebean.io/docs/trouble-shooting#not-enhanced" type="io.ebean.config.BeanNotEnhancedException">io.ebean.config.BeanNotEnhancedException: Bean class com.example.new_.User is not enhanced? Check packages specified in ebean.mf. If you are running in IDEA or Eclipse check that the enhancement plugin is installed. See https://ebean.io/docs/trouble-shooting#not-enhanced
+	at app//io.ebeaninternal.server.deploy.BeanDescriptorManager.setEntityBeanClass(BeanDescriptorManager.java:1381)
+	at app//io.ebeaninternal.server.deploy.BeanDescriptorManager.createByteCode(BeanDescriptorManager.java:1266)
+	at app//io.ebeaninternal.server.deploy.BeanDescriptorManager.readDeployAssociations(BeanDescriptorManager.java:1194)
+	at app//io.ebeaninternal.server.deploy.BeanDescriptorManager.readEntityDeploymentAssociations(BeanDescriptorManager.java:668)
+	at app//io.ebeaninternal.server.deploy.BeanDescriptorManager.deploy(BeanDescriptorManager.java:292)
+	at app//io.ebeaninternal.server.core.InternalConfiguration.&lt;init&gt;(InternalConfiguration.java:128)
+	at app//io.ebeaninternal.server.core.DefaultContainer.createServer(DefaultContainer.java:109)
+	at app//io.ebeaninternal.server.core.DefaultContainer.createServer(DefaultContainer.java:35)
+	at app//io.ebean.DatabaseFactory.createInternal(DatabaseFactory.java:136)
+	at app//io.ebean.DatabaseFactory.create(DatabaseFactory.java:85)
+	at app//com.example.new_.DBConfig.setup(DBConfig.java:30)
+	at app//com.example.new_.MainVerticle.start(MainVerticle.java:132)
+	at app//io.vertx.core.impl.DeploymentManager.lambda$doDeploy$5(DeploymentManager.java:210)
+	at app//io.vertx.core.impl.ContextInternal.dispatch(ContextInternal.java:279)
+	at app//io.vertx.core.impl.ContextInternal.dispatch(ContextInternal.java:261)
+	at app//io.vertx.core.impl.ContextInternal.lambda$runOnContext$0(ContextInternal.java:59)
+	at app//io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+	at app//io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166)
+	at app//io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:469)
+	at app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994)
+	at app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base@20/java.lang.Thread.run(Thread.java:1623)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
